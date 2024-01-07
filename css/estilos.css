@@ -6,6 +6,12 @@
 }
 
 
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 10px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+    text-align: left; /* Alineación a la izquierda para dispositivos móviles */
+  }
+}
 header {
     position: fixed;
     z-index: 1000;
