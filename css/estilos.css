@@ -7,14 +7,13 @@
 
 
 @media only screen and (max-width: 767px) {
-  section:nth-of-type(8) div p{
-    font-size: 10px; /* Tamaño de fuente más pequeño para dispositivos móviles */
-    text-align: left; /* Alineación a la izquierda para dispositivos móviles */
-  }
-    section:nth-of-type(6) article{
-        border:none;
-        text-align:left;
+    p, a, li, td {
+        color: white;
+        font-size: 10px;
     }
+    section:nth-of-type(8) div p{
+    text-align: left; 
+  }
     
 }
 header {
@@ -80,8 +79,7 @@ h2, h3 {
 /* Other Elements */
 p, a, li, td {
     color: white;
-    font-size: 15px;
-    font-family:Aquatic;
+    font-size: 20px;
 }
 
 
@@ -158,6 +156,7 @@ section:nth-last-of-type(2) h2{
 }
 section:nth-of-type(2) figure img:hover{
     border: 4px solid var(--colorVerde);
+    border-radius: 30px;
     
 }
 
@@ -203,12 +202,8 @@ section:nth-of-type(6) ul li{
     list-style: none;
 
 }
-section:nth-of-type(6) p,section:nth-of-type(6) li{
-    font-size: 15px;
-}
-section:nth-of-type(6) article{
-    border-left: 1px solid white;;
-}
+
+
 
 section:nth-of-type(7)
 {
@@ -242,6 +237,11 @@ section:nth-of-type(8) a:hover{
 }
 section:nth-of-type(9){
     background-color:rgba(0, 0, 0, 0.815);
+}
+section:nth-of-type(8) h5{
+    color:white;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(68, 68, 68);
 }
 /* footer */
 
