@@ -223,7 +223,6 @@ section:nth-of-type(8) div{
 }
 section:nth-of-type(8) div p{
     color:rgb(255, 255, 255);
-    font-size:10px;
 }
 section:nth-of-type(8) img{
     margin-top: 20px;
