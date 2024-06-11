@@ -29,15 +29,15 @@
             <button id="toggleButton" class="navbar-toggler" type="button" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="col-4" href="#Bienvenido">Santiago Roldan</a>
+            <a href="#Bienvenido" style="color:black">Santiago Roldan</a>
             <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-3">
+                <div class="p-3">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#Estudios" class="p-3 nav-link text-white">Estudios</a></li>
-                        <li class="nav-item"><a href="#Lenguajes" class="p-3 nav-link text-white">Lenguajes</a></li>
-                        <li class="nav-item"><a href="#SobreMi" class="p-3 nav-link text-white">Sobre mi</a></li>
-                        <li class="nav-item"><a href="#Proyectos" class="p-3 nav-link text-white">Proyectos</a></li>
-                        <li class="nav-item"><a href="#Contacto" class="p-3 nav-link text-white">Contacto</a></li>
+                        <li class="list-inline-item m-2"><a href="#Bienvenido" class="p-4 text-decoration-none">Presentacion</a></li>
+                    <li class="list-inline-item m-2"><a href="#SobreMi" class="p-4 text-decoration-none">Sobre mi</a></li>
+                    <li class="list-inline-item m-2"><a href="#Estudios" class="p-4 text-decoration-none">Estudios</a></li>
+                    <li class="list-inline-item m-2"><a href="#Lenguajes" class="p-4 text-decoration-none">Lenguajes</a></li>
+                    <li class="list-inline-item m-2"><a href="#Proyectos" class="p-4 text-decoration-none">Proyectos</a></li>
                     </ul>
                 </div>
             </div>
@@ -48,56 +48,109 @@
 </header>
 
 <header class="d-none d-md-block">
-    <!-- Este es el header para dispositivos de tamaño grande (lg) -->
-    <div class="row justify-content-center text-center align-items-center p-3">
-        <h3 class="col-lg-3 ml-3"><span>Santiago Roldan</span></h3>
-        <nav class="col-lg-8 text-center p-4">
-            <ul class="list-inline mt-1">
-                <li class="list-inline-item"><a href="#Estudios" class="p-3 text-decoration-none">Estudios</a></li>
-                <li class="list-inline-item"><a href="#Lenguajes" class="p-3 text-decoration-none">Lenguajes</a></li>
-                <li class="list-inline-item"><a href="#SobreMi" class="p-3 text-decoration-none">Sobre mi</a></li>
-                <li class="list-inline-item"><a href="#Proyectos" class="p-3 text-decoration-none">Proyectos</a></li>
-                <li class="list-inline-item"><a href="#Contacto" class="p-3 text-decoration-none">Contacto</a></li>
-            </ul>
-        </nav>
+    <div class="row justify-content-center text-center align-items-center">
+            <h3 class="col-md-2">Santiago Roldan</h3>
+            <nav class="col-md-7 p-4">
+                <ul class="list-inline text-center float-end">
+                    <li class="list-inline-item m-2"><a href="#Bienvenido" class="p-4 text-decoration-none">Presentacion</a></li>
+                    <li class="list-inline-item m-2"><a href="#SobreMi" class="p-4 text-decoration-none">Sobre mi</a></li>
+                    <li class="list-inline-item m-2"><a href="#Estudios" class="p-4 text-decoration-none">Estudios</a></li>
+                    <li class="list-inline-item m-2"><a href="#Lenguajes" class="p-4 text-decoration-none">Lenguajes</a></li>
+                    <li class="list-inline-item m-2"><a href="#Proyectos" class="p-4 text-decoration-none">Proyectos</a></li>
+                    
+                </ul>
+                
+            </nav>
+            <button class="col-1 p-2" onclick="window.location.href='#Contacto'">Contacto</button>
+
+            
     </div>
 </header>
 
 <main class="container-fluid">
     <!-- Contenido principal -->
-</main>
 
-        <section class="row justify-content-center p-5 text-center" id="Bienvenido">
-            <h1 class="col-lg-12 col-md-12 col-sm-12 mt-5">Bienvenido</h1>
-            <h3 class="col-12">Mi nombre es Santiago Roldan, soy desarrollador Front End.</h3>  
+
+        <section class="row p-5 text-center" id="Bienvenido">
+            <div class="col-lg-5">
+                <h1 >Bienvenido a mi sitio</h1>
+                <h3 class="m-4">Santiago Roldan, desarrollador front end</h3>  
+                <p >Desarrollador web y estudiante universitario, en este momento especializado en Front-end con solidos conocimientos en Back-end. </p>
+            </div>
+            
+        </section>
+
+        <section class="row align-items-center justify-content-center mt-5" id="SobreMi">
+            <h2 class="text-center">Sobre mí</h2>
+            <article class="col-md-5 col-10 mr-3 mt-4">
+                    <img src="img/74265175edd303f1d4f413066121e540.jpg" class="d-block w-100" alt="...">
+                      <p>Imagen de mi ciudad natal.</p>
+                    </div>
+                  </div>
+            </article>
+            <article class="col-md-4 col-10  justify-content-center ">
+                
+                <p>Mi nombre es Santiago Roldan, tengo 22 años, soy desarrollador web junior y estudiante de Analista en Tecnologías de la Información en la Universidad ORT.</p>
+                <p>Nací y vivo en la ciudad de Las Piedras, en el departamento de Canelones, Uruguay.</p>
+                <p>Mi pasión por la tecnología surge de mi gusto por los videojuegos y mi deseo constante de ayudar a las personas en sus problemas cotidianos. Estoy convencido de que nuestro aporte en la tecnología puede facilitar la vida a muchas personas en nuestro país y es por eso que cada día me enamoro mas de esta profesión.</p>
+                <ul class="list-inline">
+                    <li><span>Edad:</span> 22 años</li>
+                    <li><span>Estudios:</span> 2º año de Analista IT (Cursando)</li>
+                    <li><span>Nacionalidad:</span> Uruguayo</li>
+                    <li><span>Trabajo actual:</span> Digital Value, España</li>
+                </ul>
+            </article>
         </section>
 
 
+
 <!--ESTUDIOS-->
-        <section class="row justify-content-center p-5" id="Estudios">
-            <h2 class="col-lg-12 col-md-12 col-sm-12 text-center mb-4"><span>Estudios:</span></h2>
-            <article class="col-md-3 col-5 m-2">
-                <figure class="text-center">
-                    <img src="img/lapiz - copia.png" alt="" class="img-fluid ">
-                </figure>
-                <h4>Primaria</h4>
-                <p>Escuela 244</p>
+        <section class="align-items-center p-5 mt-2 mb-5" id="Estudios">
+            <article class="row justify-content-center  ">
+                <article class="col-md-1 d-md-block justify-content-center align-items-center col-3 m-3">
+                </article>
+                <div id="carouselExampleCaptions" class="carousel slide ml-5 col-10 col-md-5">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/Rose.jpg" class="d-block img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block ">
+                          <h5>Liceo Manuel Rose</h5>
+                          <p>Liceo donde ejerci mis estudios de bachillerato.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/direccion-de-la-facultad-de-ingenieria-de-ort.jpg" class="d-block img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Universidad ORT</h5>
+                          <p>Universidad donde curso actualmente</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  
+    
+                <article class="col-md-5 col-10 justify-content-center align-items-center col-3 m-3">
+                    <h2 class="col-lg-12 col-md-12   mb-4">Estudios:</h2>
+                    <h3>Secundaria</h3>
+                    <p>Ciclo basico: <span> Liceo Nº4 "Vivian Trias"</span></p>
+                    <p>Bachillerato: <span>Liceo Nº1 "Manuel Rose"</span></p>
+                    <h3>Universidad</h3>
+                    <p>Analista en Tecnologias de la informacion: <span>Universidad ORT</span></p>
+                </article>
             </article>
-            <article class="col-md-3 col-5 m-2">
-                <figure class="text-center">
-                    <img src="img/pila-de-libros-de-tres - copia.png" alt="" class=" img-fluid">
-                </figure>
-                <h4>Secundaria</h4>
-                <p>Ciclo basico: <span> Liceo Nº4 "Vivian Trias"</span></p>
-                <p>Bachillerato: <span>Liceo Nº1 "Manuel Rose"</span></p>
-            </article>
-            <article class="col-md-3 col-7 m-2">
-                <figure class="text-center">
-                    <img src="img/computadora - copia.png" alt="" class="img-fluid">
-                </figure>
-                <h4>Universidad</h4>
-                <p>Analista en Tecnologias de la informacion <span>Universidad ORT</span></p>
-            </article>
+            
         </section>
 
 <!--BANNER DE LENGUAJES-->
@@ -107,10 +160,10 @@
         </section>
 
 <!--TABLA DE LENGUAJES-->
-        <section class="row text-center justify-content-center">
-            <article class="col-9 text-center mt-2">
+        <section class="row justify-content-center ">
+            <article class="col-9 text-center mt-2 mb-4">
                 <table class="table">
-                    <thead class="">
+                    <thead>
                         <tr>
                             <th scope="col"><span>Desarrollo Web</span></th>
                             <th scope="col"><span>Bases de datos</span></th>
@@ -125,18 +178,36 @@
                         </tr>
                         <tr>
                             <td>CSS</td>
-                            <td>Modelo Entidad Relacion</td>
-                            <td>Astah</td>
+                            <td>Modelado Entidad Relacion</td>
+                            <td>.NET FRAMEWORK</td>
                         </tr>
                         <tr>
                             <td>JavaScript</td>
-                            <td>Modelo relacional</td>
-                            <td>Programacion en bloque: MBlock</td>  
+                            <td>Modelado relacional</td>
+                             <td> Ionic</td>
                         </tr>
                         <tr>
                             <td>C#</td>
-                            <td>--</td>
-                            <td>Programacion en bloque: Scratch</td>       
+                            <td>LINQ</td>
+                            <td> Mithril.JS</td>      
+                        </tr>
+                        <tr>
+                            <td>
+                                JAVA
+                            </td>
+                            <td>
+                                --
+                            </td>
+                            <td>Programacion en bloque: Scratch</td> 
+                        </tr>
+                        <tr>
+                            <td>
+                                --
+                            </td>
+                            <td>
+                                --
+                            </td>
+                           <td>Programacion en bloque: MBlock</td>  
                         </tr>
                     </tbody>
                 </table>
@@ -146,68 +217,102 @@
 
 
         <!-- Sobre Mi -->
-        <section class="row p-5 p-md-5" id="SobreMi">
-            <h1 class="text-center">Sobre Mi:</h1>
-        </section>
-
-        <section class="row  justify-content-center p-5" id="">
-            <ul class="col-7 col-md-6 p-2 ml-2">
-                <li><span>Edad:</span>22 años</li>
-                <li><span>Estudio:</span> 2do año de Analista IT (Cursando)</li>
-                <li><span>Nacionalidad:</span>Uruguayo</li>
-            </ul>
-                <P class="col-md-6 col-6 p-3"><span>Mis gustos:</span> Soy fanatico de los videojuegos, el deporte y la tecnologia. </P>
-                <p class="col-md-7 col-6 mt-2 p-3"><span>Mi objetivo es generar soluciones para la sociedad en base al desarrollo de las tecnologias.</span></p>
-        </section>
-
+        
 
         <!--Proyectos-->
         <section class="row justify-content-center text-center p-5" id="Proyectos">
             <h1>Proyectos:</h1>
-        </section>
-        <section class="row justify-content-center">
-            <div class=" col-5 card m-3">
-                <img src="img/StarDev.png" class="card-img-top" alt="StarDev">
+            <p>Los proyectos no son accesibles actualmente ya que no están hosteados</p>
+            <div class="col-md-3 col-10  card m-3 mr-3">
+                <img src="img/Edura1.png" class="card-img-top main-img" alt="ElectroCar">
+                <img src="img/Edura2.png" class="card-img-top hover-img" alt="ElectroCar">
                 <article class="card-body text-center">
-                  <h5 class="card-title">StarDev</h5>
+                  <h2 class="card-title">Edura</h2>
+                  <p class="card-text">Sitio educativo</p>
+                  <h5><span>Lenguajes y framework:</span></h5>
+                  <p>HTML, JAVASCRIPT, CSS, Y Mithril.JS</P>
+                  <p>Proyecto para: <span>Digital Value</span></p>
+                </article>
+              </div>
+            <div class="col-md-3 col-10 card m-3 mr-3">
+                <img src="img/Orquesta1.png"  class="card-img-top main-img" alt="ElectroCar">
+                <img src="img/Orquesta2.png" class="card-img-top hover-img" alt="ElectroCar">
+                <article class="card-body text-center">
+                  <h2 class="card-title">Maestro</h2>
+                  <p class="card-text">Sitio de orquestas</p>
+                  <h5><span>Lenguajes y framework:</span></h5>
+                  <p>HTML, JAVASCRIPT, CSS, Y Mithril.JS</P>
+                  <p>Proyecto para: <span>Digital Value</span> </p>
+                </article>
+              </div>
+              <div class="col-md-3 col-10 card m-3 mr-3">
+                <img src="img/Bici1.png"  class="card-img-top main-img" alt="ElectroCar">
+                <img src="img/Bici2.png"  class="card-img-top hover-img" alt="ElectroCar">
+                <article class="card-body text-center">
+                  <h2 class="card-title">Trical</h2>
+                  <p class="card-text">Web de alquiler de motocicletas</p>
+                  <h5><span>Lenguajes y framework:</span></h5>
+                  <p>HTML, JAVASCRIPT, CSS, Y Mithril.JS</P>
+                  <p>Proyecto para: <span>Digital Value</span> </p>
+                </article>
+              </div>
+            <div class="col-md-3 col-10 card m-3">
+                <img src="img/Stardev1.png"  class="card-img-top main-img" alt="StarDev">
+                <img src="img/Stardev2.png"  class="card-img-top hover-img" alt="StarDev">
+                <article class="card-body text-center">
+                  <h2 class="card-title">StarDev</h2>
                   <p class="card-text">StarDev es una empresa de desarrollo web especializada en el Front-End</p>
-                  <a href="http://stardev.somee.com" class="btn btn-primary">Ir a la web</a>
+                  <h5><span>Lenguajes y framework:</span></h5>
+                  <p>HTML, CSS,Bootstrap</P>
+                  <p>Proyecto personal</p>
                 </article>
               </div>
-            <div class="col-5 card m-3 mr-3">
-                <img src="img/pag2.jpg" class="card-img-top" alt="ElectroCar">
+            <div class="col-md-3 col-10 card m-3 mr-3">
+                <img src="img/ElectroCar1.png" class="card-img-top main-img" alt="ElectroCar">
+                <img src="img/ElectroCar2.png" class="card-img-top hover-img" alt="ElectroCar">
                 <article class="card-body text-center">
-                  <h5 class="card-title">ElectroCar</h5>
+                  <h2 class="card-title">ElectroCar</h2>
                   <p class="card-text">ElectroCar una pagina de divulgacion y compra de autos electricos</p>
-                  <a href="https://github.com/SantiRx/ElectroCar" class="btn btn-primary">Ir a la web</a>
+                  <h5><span>Lenguajes y framework:</span></h5>
+                  <p>HTML, CSS,Bootstrap</P>
+                    <p>Proyecto personal</p>
+                </article>
+              </div>
+            <div class="col-md-3 col-10 card m-3 mr-3">
+                <img src="img/Peñarol1.png" class="card-img-top main-img" alt="ElectroCar">
+                <img src="img/Peñarol2.png" class="card-img-top hover-img" alt="ElectroCar">
+                <article class="card-body text-center">
+                  <h2 class="card-title">Peñarol</h2>
+                  <p class="card-text">Web de peñarol</p>
+                  <h5><span>Lenguajes y framework:</span></h5>
+                  <p>HTML, CSS,Bootstrap</P>
+                    <p>Proyecto personal</p>
                 </article>
               </div>
         </section>
 
-
-        <!-- CONTACTO -->
-        <section class="row justify-content-center text-center mt-5 p-4" id="Contacto">
-            <h2 class="m-5">Contacto</h2>
-            
-            <article class="col-3">
-                <a href="mailto:developers.st4r@gmail.com?Subject=Consulta">
-                    <img src="img/klipartz.com.png" class="img-fluid">
-                </a>
-            </article>
-            
-            <article class="col-3">
-                <a href="https://discord.com/users/santiiiiii3410">
-                    <img src="img/DiscordLogoPNGImage.png" class="img-fluid">
-                </a>
-            </article>
-        </section>
         
-    
-
-    <!-- FOOTER -->
-    <footer class="row justify-content-center pt-3">
-        <p class="col-lg-12 text-center">Sitio creado por: Santiago Roldan</p>
-    </footer>
+            <section class="row justify-content-center text-center" id="Contacto">
+                <h2>Contacto</h2>
+                <h3>Por contacto comunicarse por los siguientes medios:</h3>
+                <ul>
+                    <li><a href="mailto:santiagoroldan2506@gmail.com"><spam><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                        <path d="M3 7l9 6l9 -6" />
+                      </svg></spam></a></li>
+                    <li><a href="https://discord.gg/AkTvZKYg"><spam><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                        <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                        <path d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3" />
+                        <path d="M7 16.5c3.5 1 6.5 1 10 0" />
+                      </svg></spam></a></li>
+                </ul>
+            </section>
+        <footer class="text-center">
+            <p style="color:black">Sitio creado por Santiago Roldan</p>
+        </footer>
 </main>
 
 </body>
