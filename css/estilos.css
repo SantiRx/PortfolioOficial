@@ -1,8 +1,7 @@
 
 /* Global Styles */
 :root {
-    --colorVerde: rgb(194, 226, 10);
-    --colorCeleste: /* Define el color celeste */;
+    --colorMarron:rgb(255, 129, 26);;
 }
 
 
@@ -17,24 +16,21 @@
     
 }
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
     position: fixed;
     z-index: 1000;
-    background-color: transparent;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     top: 0;
-    padding: 20px;
+    color:rgb(0, 0, 0);
 
 }
-
-header h3 {
-    border-left: 3px solid black;
+header h3{
+    color:rgb(0, 0, 0);
 }
 
-header nav {
-    border: 3px solid white;
-    border-radius: 40px;
-    background-color: rgba(0, 0, 0, 0.349);
-}
 
 header ul {
     list-style: none; /* Elimina los puntos de lista */
@@ -44,23 +40,34 @@ header ul {
 
 header ul li {
     display: inline-block;
-    margin-right: 15px;
+    border-bottom: 5px solid rgb(255, 255, 255);
 }
 
+header ul li:hover{
+    border-bottom: 5px solid rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+}
 header ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 18px;
 }
 
-header ul li a:hover {
-    color: var(--colorVerde);
+header  button{
+    background-color: rgb(255, 251, 251);
+    border-radius: 2px ;
+    border: 2px solid black;
+    color:black;
 }
-
+header  button:hover{
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
 
 /* Aquatic Font */
 h1, h2, h3 {
-    font-family: 'Aquatic', sans-serif;
+    font-family: "Sarabun";
+    color: white;
 }
 
 h1 {
@@ -69,17 +76,16 @@ h1 {
 }
 
 span {
-    color: rgb(248, 244, 0);
+    color:var(--colorMarron);
 }
 
-h2, h3 {
-    color: var(--colorCeleste);
-}
+
 
 /* Other Elements */
 p, a, li, td {
     color: white;
     font-size: 20px;
+    font-family: "Sarabun";
 }
 
 
@@ -87,9 +93,7 @@ p, a, li, td {
 /*Body*/
 
 body {
-    background-image: url("../img/fondogif.gif");
-    background-size: cover;
-    color: white;
+    background-color:  rgb(255, 255, 255);
     margin: 0; 
 }
 
@@ -97,43 +101,52 @@ body {
 
 
 /* Section 1 Styles */
-section:nth-of-type(1) {
-    height: 500px;
-    position: relative;
-    z-index: 1; /* Ajustado a 1 para estar sobre el encabezado */
-    margin-top: 80px; /* Ajustado para dar espacio al header */
+main section:nth-of-type(1) {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    z-index: 1; 
+    background-image: url("../img/4d740888825ff6e44028919c3f2ebfc0.gif");
+    background-size: cover;
 }
 
 section:nth-of-type(1) p {
     color: white;
 }
+section:nth-of-type(1) h1 {
+    color: white;
+}
 
-header:nth-of-type(1) nav {
-    background-color: rgba(0, 0, 0, 0.034);
+header  nav {
+    background-color: rgb(255, 255, 255);
     border: none;
 }
-header:nth-of-type(1) button{
+header button{
     background-color: rgb(255, 255, 255);
 }
-header:nth-of-type(1) button:hover{
-    border:2px solid yellow;
+
+header div ul li:hover{
+    border-bottom: 2px solid black;
 }
-header:nth-of-type(1) div ul li:hover{
-    background-color: gray;
-}
-header:nth-of-type(1) a{
+header a{
     font-size: 20px;
     text-decoration: none;
     color:white;
 }
-header:nth-of-type(1) a:hover{
-    color:yellow;
+header a:hover{
+    color:black;
 }
 
 
 
 
 
+section:nth-of-type(1) h3{
+    color:white;
+}
 
 section article a{
     
@@ -148,31 +161,28 @@ section article a:hover{
 }
 
 
-section:nth-of-type(2){
-    background-color: rgba(0, 0, 0, 0.87);
-}
-section:nth-last-of-type(2) h2{
-    background-color: black;
-}
-section:nth-of-type(2) figure img:hover{
+section:nth-of-type(2) img{
     border: 4px solid var(--colorVerde);
     border-radius: 30px;
-    
+}
+
+section p, h2 ,h3,li{
+    color:black;
+}
+
+section:nth-of-type(3) div div p{
+    color:white;
 }
 
 /* SECCION 3*/
 
-section:nth-of-type(3){
-    background-image: url("../img/133C.gif");
-    background-size: cover;
-    background-attachment: scroll;
-}
+
 
 /* SECCION 4 */
 
 section:nth-of-type(4){
     color: white;
-    background-color: rgba(0, 0, 0, 0.699);
+    background-color: rgba(0, 0, 0);
     text-decoration: none;
     list-style-type: none;
 }
@@ -196,18 +206,45 @@ input[type="submit"]{
 
 
 section:nth-of-type(6){
-    background-color: rgba(0, 0, 0, 0.815);
+    background-image: url("../img/4d740888825ff6e44028919c3f2ebfc0.gif");
+    background-size: cover;
+    background-repeat: repeat;
 }
-section:nth-of-type(6) ul li{
-    list-style: none;
-
+section:nth-of-type(6) div{
+    background-color: transparent;
 }
 
+section:nth-of-type(6) div article{
+    border: 2px solid white;
+    color:rgb(253, 253, 253);
+    border-radius: 15px;
+}
+section:nth-of-type(6) div article p,section:nth-of-type(6) div article h2{
+    color:rgb(253, 253, 253);
+}
+
+.card-img-top {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .card-img-top.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .card:hover .card-img-top.hover-img {
+    opacity: 1;
+  }
+  .card:hover .card-img-top.main-img {
+    opacity: 0;
+  }
 
 
 section:nth-of-type(7)
 {
-    background-image: url("../img/133C.gif");
     background-size: cover;
     background-attachment: scroll
 }
@@ -235,32 +272,43 @@ section:nth-of-type(8) a:hover{
     border:1px solid rgb(243, 219, 0);
     background-color: rgb(122, 0, 0);
 }
-section:nth-of-type(9){
-    background-color:rgba(0, 0, 0, 0.815);
+section:nth-of-type(5){
+    background-color:rgba(255, 255, 255, 0.815);
+    color:black;
 }
 section:nth-of-type(8) h5{
     color:white;
     font-size: 25px;
     border-bottom: 1px solid rgb(68, 68, 68);
 }
-/* footer */
 
-footer{
-    background-color:black;
-    color: white;
-}
 
 section table th, section table td{
-    color:rgb(255, 255, 255);
+    color:black;
 }
 
 section table td:hover{
-    color: var(--colorVerde) !important;;
+    background-color: black;
+    color:white;
 }
 
+.carousel-caption{
+    background-color: rgba(22, 22, 22, 0.712)
+    
+}
+/* footer */
+
+footer {
+    background-color: white !important;
+    background-image: none !important; /* Añadido para asegurar que no haya una imagen de fondo */
+}
 
 /* FUENTES */
 @font-face {
     font-family: Aquatic;
     src: url("../fonts/Aquatico-Regular.otf");
+}
+@font-face {
+    font-family: Sarabun;
+    src: url("../fonts/Sarabun-Regular.ttf");
 }
